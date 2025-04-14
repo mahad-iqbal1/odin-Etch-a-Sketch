@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.column, .row {
+    height: 100px;
+    width: 100px;
+}
+
+.row {
+    background-color: pink;
+}
+
+.column {
+    background-color: blue
+}
