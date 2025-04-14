@@ -5,9 +5,9 @@ for (let i = 0; i < 16; i++) {
     column.classList.add("column");
     container.appendChild(column);
 
-    for (let j = 0; j < 15; j++) {
+    for (let j = 0; j < 16; j++) {
         const row = document.createElement("div");
         row.classList.add("row");
-        container.appendChild(row);
+        column.appendChild(row);
     }
 }

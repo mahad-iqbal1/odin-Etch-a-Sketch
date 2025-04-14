@@ -2,24 +2,27 @@ body {
     min-height: 100vh;
     margin: 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 120px;
+    padding-left: 120px;
 }
 
 .container {
-    flex-grow: 1;
+    height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    align-content: start;
-}
-
-.column, .row {
-    height: 100px;
-    width: 100px;
-}
-
-.row {
-    background-color: pink;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
 }
 
 .column {
-    background-color: blue
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+}
+
+.row {
+    border-right: 1px solid black;
+    flex: 1;
+    aspect-ratio: 1 / 1;
 }
